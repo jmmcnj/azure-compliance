@@ -1,0 +1,46 @@
+documentation_complete: false
+name: Azure Implementation
+schema_version: 3.0.0
+references:
+- name: SC Policy
+  path: https://github.com/AppliedIS/azure-blueprint/wiki/NIST-800-53-rev4-Controls
+  type: URL
+satisfies:
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+   - text: |
+        AU-2 - Audit Events
+        All Azure events are monitored through Operations Management Suite (OMS).
+        This is implemented with our OMS monitoring agents that are applied to every virtual machine
+        in the environment.
+        A verification step can be done by confirming the existence
+        of the OMS agent on each machine with InSpec.
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        SC-1 - System and Communications Protection Policy and Procedures
+        This text describes how our organization is meeting the requirements for the
+        Security Controls policy, and also references a more complete description at
+        the referenced document at
+        https://github.com/AppliedIS/azure-blueprint/wiki/NIST-800-53-rev4-Controls
+        Since the SC-1 `control` is to document and disseminate a policy on
+        Security Controls
+        this narrative suffices to provide that control. A verification step could be something
+        that checks that the referenced policy is no more than 365 days old.
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        SC-7 - Boundary protection
+        Boundary protection is provided, in Azure, with Security Groups that do not allow
+        ingress except to port 443 and access through the Host Bastion environment
+        Verification: No security groups allow 0.0.0.0 inbound except ones named 'elb.*' can
+        allowed port 443 to 0.0.0.0 (testing with InspecAws)

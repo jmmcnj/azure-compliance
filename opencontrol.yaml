@@ -1,0 +1,18 @@
+schema_version: "1.0.0"
+name: azurecomplianceAZBprint
+metadata:
+  description: OpenControl project for Azure Blueprint architectures
+  maintainers:
+    - jason.mcnutt@appliedis.com
+components:
+  - ./SC
+dependencies:
+  standards:
+    - url: https://github.com/opencontrol/NIST-800-53-Standards
+      revision: master
+  certifications:
+    - url: https://github.com/opencontrol/FedRAMP-Certifications
+      revision: master
+  systems:
+    - url: https://github.com/jmmcnj/azure-blueprint
+      revision: master
