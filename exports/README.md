@@ -23,7 +23,7 @@ The source documents are under source-code control with Git and GitHub at the fo
 If there are errors or corrections, please submit them to https://github.com/opencontrol/ato1day-compliance/issues.
 ## Standards
 * [AC](standards\NIST-800-53-AC.md)
-	* [AC-1: Access Control Policy and Procedures](standards\NIST-800-53-AC-1.md)
+	* [AC-1: Access Control Policy and Procedures](standards/NIST-800-53-AC-1.md)
 	* [AC-2: Account Management](standards\NIST-800-53-AC-2.md)
 	* [AC-3: Access Enforcement](standards\NIST-800-53-AC-3.md)
 	* [AC-7: Unsuccessful Logon Attempts](standards\NIST-800-53-AC-7.md)
